@@ -6,15 +6,15 @@ class App extends React.Component {
     count: 0
   };
   plus = () => {
-    console.log("Plus");
+    this.setState(current => ({ count: current.count + 1 }));
   };
   minus = () => {
-    console.log("Minus");
+    this.setState(current => ({ count: current.count - 1 }));
   };
   render() {
     return (
       <div>
-        <h1>the NUMBER ISSSSSS: {this.state.count}</h1>
+        <h1>the number is {this.state.count}</h1>
         <button onClick={this.plus}>Plus</button>
         <button onClick={this.minus}>Minus</button>
       </div>
