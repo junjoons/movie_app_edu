@@ -32,9 +32,10 @@ class App extends React.Component {
             <span className="loader__text">loading...</span>
           </div>
         ) : (
-          movies.map(movie => (
-            <div className="movies" key={movie.id}>
+          <div className="movies">
+            {movies.map(movie => (
               <Movie
+                key={movie.id}
                 id={movie.id}
                 year={movie.year}
                 title={movie.title}
@@ -42,8 +43,8 @@ class App extends React.Component {
                 poster={movie.medium_cover_image}
                 genres={movie.genres}
               />
-            </div>
-          ))
+            ))}
+          </div>
         )}
       </section>
     );
