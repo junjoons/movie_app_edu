@@ -1,5 +1,5 @@
 {
-  "name": "movie_app_edu",
+  "name": "movie-app-edu-ver2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,5 +30,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
