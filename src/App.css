@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,6 +16,8 @@ body,
 #root,
 .container {
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .loader {
@@ -25,4 +31,18 @@ body,
 .movies {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px;
+  width: 80%;
+}
+
+.movies .movie {
+  width: 45%;
+  background-color: white;
+  margin-bottom: 70px;
+  display: flex;
+}
+
+.movie img {
+  max-width: 200px;
 }
