@@ -1,5 +1,5 @@
 {
-  "name": "movie-app-edu-ver2",
+  "name": "movie_app_edu",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "deploy": "gh-pages "
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,6 +33,5 @@
       "last 1 safari version"
     ]
   },
-  "keywords": [],
-  "description": ""
+  "homepage": "http://junjoons.github.io/movie_app_edu"
 }
