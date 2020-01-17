@@ -1,7 +1,21 @@
 import React from "react";
 
-function Detail() {
-  return <h1>ill send you to gulag</h1>;
+class Detail extends React.Component {
+  componentDidMount() {
+    const { history, location } = this.props;
+    if (location.state === undefined) {
+      history.push("/");
+    }
+    console.log(location);
+  }
+  render() {
+    const { location } = this.props;
+    if (location.state) {
+      return <span>{location.state.title}</span>;
+    } else {
+      return null;
+    }
+  }
 }
 
 export default Detail;
